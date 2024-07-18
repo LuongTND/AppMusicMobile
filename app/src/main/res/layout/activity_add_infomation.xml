@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="Back"
+        android:src="@drawable/ic_back_arrow"
+        app:tint="#FFFFFF"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add infomation Artist"
+        android:textColor="#33CCFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/tv_whats_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your Name?"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_create_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Email Input Field -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColor="#FFFFFF"
+        android:inputType="textPersonName"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_below="@id/tv_whats_your_name"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Hint Text -->
+    <TextView
+        android:id="@+id/tv_email_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You'll need to confirm this email later."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_below="@id/et_name"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Biography Label -->
+    <TextView
+        android:id="@+id/tv_biography"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biography"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_email_hint"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Biography Input Field -->
+    <MultiAutoCompleteTextView
+        android:id="@+id/et_biography"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:hint="Enter your biography"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_below="@id/tv_biography"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:gravity="top|start"
+        android:scrollbars="vertical"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+    <!-- Music Genre Label -->
+    <TextView
+        android:id="@+id/tv_music_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Music Genre"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/et_biography"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Music Genre Spinner -->
+    <Spinner
+        android:id="@+id/spinner_music_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_music_genre"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:spinnerMode="dropdown"
+        android:dropDownVerticalOffset="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF" />
+
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:background="@drawable/button_background_rounded"
+        android:textColor="#FFFFFF"
+        android:textSize="23sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_biography"
+        android:layout_marginTop="150dp"/>
+
+</RelativeLayout>

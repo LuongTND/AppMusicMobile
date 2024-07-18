@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <svg height="48" viewBox="0 96 960 960" width="48" xmlns="http://www.w3.org/2000/svg">
+        <path d="M660 181.5v394q-13.5-3-27-4.5t-27-1.5q-62 0-105.5 42T457 718q0 62 43.5 104.5T606 865q41 0 72.5-20t44.5-53q3-7 4-13.5t1-12.5V383h139V181.5H660ZM606 770q-29 0-48.5-19.5T538 702q0-29 19.5-48.5T606 634q29 0 48.5 19.5T674 702q0 29-19.5 48.5T606 770Z"/>
+    </svg>
+
+</selector>

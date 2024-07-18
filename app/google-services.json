@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "240697192021",
+    "project_id": "echobeat-493cb",
+    "storage_bucket": "echobeat-493cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240697192021:android:181cc4ab2086cbaf842edc",
+        "android_client_info": {
+          "package_name": "com.example.echobeat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_cSEXeRN9FtoLTNATAuID2wwz7QbkK6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

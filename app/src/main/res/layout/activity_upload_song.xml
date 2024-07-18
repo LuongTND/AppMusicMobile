@@ -1,0 +1,137 @@
+<!-- res/layout/activity_upload_song.xml -->
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_artist_uploadSong"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UploadSong">
+
+    <!-- Content layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#121212"
+        android:padding="16dp">
+
+        <!-- Activity Title -->
+        <TextView
+            android:id="@+id/tvActivityTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPLOAD YOUR TRACK"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+
+        <!-- Image View for Song Image -->
+        <ImageView
+            android:id="@+id/ivSongImage"
+            android:layout_width="234dp"
+            android:layout_height="175dp"
+            android:layout_below="@+id/tvActivityTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:contentDescription="Song Image"
+            android:src="@drawable/empty" />
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/btnUploadImage"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSongImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/spotifyGreen"
+            android:text="UPLOAD IMAGE"
+            android:textColor="@color/white" />
+
+        <!-- Select Song Button -->
+        <Button
+            android:id="@+id/btnSelectSong"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnUploadImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="@color/spotifyGreen"
+            android:text="SELECT SONG"
+            android:textColor="@color/white" />
+
+        <!-- Selected Song TextView -->
+        <TextView
+            android:id="@+id/tvSelectedSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSelectSong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="No song selected"
+            android:textColor="@color/white" />
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/tvSongTitleLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSelectedSong"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="TITLE"
+            android:textColor="#FFFFFF" />
+
+        <!-- Song Title EditText -->
+        <EditText
+            android:id="@+id/etSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSongTitleLabel"
+            android:layout_marginTop="10dp"
+            android:hint="Enter song title"
+            android:maxLength="30"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Publish Button -->
+        <Button
+            android:id="@+id/btnUploadSong"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_below="@+id/etSongTitle"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="96dp"
+            android:backgroundTint="@color/spotifyGreen"
+            android:text="PUBLISH"
+            android:textColor="@color/white" />
+
+        <!-- Progress Bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- Navigation View -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_drawer_menu_artist"
+        android:background="#121212"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/white" />
+</androidx.drawerlayout.widget.DrawerLayout>

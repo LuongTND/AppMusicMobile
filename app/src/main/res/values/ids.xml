@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="backgroundView" type="id" />
+    <item name="imageSleepTimer" type="id" />
+    <item name="textLike" type="id" />
+    <item name="textRadio" type="id" />
+    <item name="textSleepTimer" type="id" />
+    <item name="textClose" type="id" />
+    <item name="imageAddToPlaysList" type="id" />
+    <item name="imageRadio" type="id" />
+    <item name="textAlbum" type="id" />
+    <item name="imageHideSong" type="id" />
+    <item name="textNameSong" type="id" />
+    <item name="imageShare" type="id" />
+    <item name="imageViewArtist" type="id" />
+    <item name="textViewArtist" type="id" />
+    <item name="imageTym" type="id" />
+    <item name="textAddToPlaysList" type="id" />
+    <item name="buttonClost" type="id" />
+    <item name="textShare" type="id" />
+    <item name="imageView4" type="id" />
+    <item name="textView" type="id" />
+    <item name="imageView6" type="id" />
+    <item name="textViewExample" type="id" />
+    <item name="imageView8" type="id" />
+    <item name="textTwitter" type="id" />
+    <item name="imageView9" type="id" />
+    <item name="textViewExample2" type="id" />
+    <item name="imageView10" type="id" />
+    <item name="textMessages" type="id" />
+    <item name="imageView11" type="id" />
+    <item name="textMore" type="id" />
+</resources>

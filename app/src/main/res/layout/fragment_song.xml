@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SongFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#121212"
+            android:padding="16dp">
+
+            <!-- New Songs TextView and RecyclerView -->
+            <TextView
+                android:id="@+id/songs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Những bài hát mới"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_songs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/songs_label"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Song Rankings TextView and RecyclerView -->
+            <TextView
+                android:id="@+id/rankings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view_songs"
+                android:layout_marginBottom="8dp"
+                android:text="Bảng xếp hạng bài hát"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_rankings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rankings_label"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Related Songs TextView and RecyclerView -->
+            <TextView
+                android:id="@+id/related_songs_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_view_rankings"
+                android:layout_marginBottom="8dp"
+                android:text="Các bài hát liên quan"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_related_songs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/related_songs_label"
+                android:layout_marginBottom="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

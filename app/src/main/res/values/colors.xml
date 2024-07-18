@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1DB954</color>
+    <color name="green_pressed">#1AA34A</color>
+    <color name="white_pressed">#DDDDDD</color>
+
+    <color name="spotifyGreen">#20bc54</color>
+    <color name="colorAccent">#C53831</color>
+    <color name="colorPrimaryText">#C12121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorBackground">#F3F3F3</color>
+    <color name="colorStroke">#BDBDBD</color>
+    <color name="colorHint">#ECECEC</color>
+    <color name="playerBackground">#191919</color>
+    <color name="playerBackground2">#1C1C1C</color>
+</resources>
